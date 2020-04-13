@@ -4,6 +4,10 @@ pipeline {
         stage('build') {
             steps {
                 sh 'npm --version'
+                sh '''
+                  echo "running after a change..."
+                  echo "to the master branch"
+                '''
             }
         }
     }
